@@ -114,24 +114,51 @@
       To stop bot ``` npm stop ```
 
    ## TERMUX/UBUNTU
-_Add environment variables in config.env then run
+_First Of All Fork The Repo Then You'll Be Able To Do All The Remaining Steps.Add environment variables in config.env and config.js then run
 following commands_
-  
-  ```apt update && apt -y upgrade
+```
+apt update && apt -y upgrade
+```
+```
 apt install proot-distro
-proot-distro install Ubuntu
+```
+```
+proot-distro install ubuntu
+```
+```
 proot-distro login ubuntu
+```
+```
 apt-get update && apt-get -y full-upgrade
-apt -y install git ffmpeg curl imagemagick
+```
+```
+apt -y install git ffmpeg curl imagemagick webp
+```
+```
 apt -y remove nodejs
 curl -fsSl https://deb.nodesource.com/setup_lts.x | bash - && apt -y install nodejs
+```
+```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - 
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 apt -y update && apt -y install yarn
+```
+```
 yarn global add pm2
+```
+_Before Cloning It,Make Sure Get Session ID Via Pairing Or Scanning.Add Session ID And Owner Number In config.env And config.js.This Process Can Be Done In Fork Only.After That Clone The Fork And Execute Remaining Commands._
+
+```
 git clone https://github.com/<your_username>/SUHAIL-XMD
+```
+```
+cd SUHAIL-XMD
+```
+```
 yarn install --network-concurrency 1 && npm install
-npm start
+```
+```
+npm install && npm start
 ```
   
  ---
